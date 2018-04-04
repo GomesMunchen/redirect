@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ProjectYES</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container white z-depth-2">
+	<ul class="tabs teal">
+		<li class="tab col s3"><a class="white-text active" href="#urls">URLS</a></li>
+		<li class="tab col s3"><a class="white-text" href="#imports">IMPORTS</a></li>
+        <li class="tab col s3"><a class="white-text active" href="#visualizar">PUBLIC POSTS</a></li>
+	</ul>
+	<div id="urls" class="col s12">
+		<form class="col s12">
+			<div class="form-container">
+				<h3 class="teal-text">Adicione seu POST</h3>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="url" type="url" class="validate">
+						<label for="url">URL</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="titulo" type="text" class="validate">
+						<label for="titulo">Titulo</label>
+					</div>
+				</div>
+				<br>
+                <center>
+                   <a href="urls.php">Edição Completa</a>
+                <br/>
+                </center>
+                <br/>
+				<center>
+					<button class="btn waves-effect waves-light teal" type="submit" name="action"  >Enviar</button>
+					<br>
+					<br>
+					
+				</center>
+			</div>
+		</form>
+	</div>
+	<div id="imports" class="col s12">
+		<form class="col s12">
+			<div class="form-container">
+				<h3 class="teal-text">Importe seu POST</h3>
+                
+                    <div class="row">
+					<div class="input-field col s12">
+						<input id="url" type="url" class="validate">
+						<label for="url">URL</label>
+					</div>
+                </div>
+                    
+                
+				<div class="row">
+					<div class="input-field col s10">
+						<input id="title" type="text" class="validate">
+						<label for="title">Titulo</label>
+					</div>
+                </div>
+            
+				<div class="row">
+					<div class="input-field col s12">
+                        <br/><br/>
+                	<label for="imagem" class="col-sm-2 control-label">Imagem </label>
+                    <div class="col-sm-10">
+                        <input type=file>
+                        <img />
+                    <br/> <br/>
+                             <center>
+                     <a href="imports.php">Edição Completa</a>
+                        </center>
+                    <br/>
+                   
+                    <center>
+                        <br/>
+					<button class="btn waves-effect waves-light teal" type="submit" name="action">Publicar</button>
+				</center>
+			</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div id="visualizar" class="col s12">
+		<form class="col s12">
+			<div class="form-container">
+				<h3 class="teal-text">Visualizar</h3>
+				<div class="row">
+					<div class="input-field col s12">
+                    </div>
+                    
+                <center>
+					<button class="btn waves-effect waves-light teal" type="button"name="action">Enviar</button>
+                    <button class="btn waves-effect waves-light teal" type="excluir" name="action">Excluir</button>
+                    <button class="btn waves-effect waves-light teal" type="edit" name="action">Editar</button>
+					
+	     			</center>
+                </div>
+            </div>
+		</form>
+      </div>
+      
+ <script src='https://code.jquery.com/jquery-2.1.1.min.js'>
+                    </script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'>
+                    </script>
+ <script  src="js/index.js">
+                    </script>
+          
+	
+    </div>
+    </body>
+</html>
+
+
